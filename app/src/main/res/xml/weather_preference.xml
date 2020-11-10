@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="@string/pref_location_key"
+        android:icon="@drawable/ic_location_on_black_36dp"
+        android:defaultValue="@string/pref_location_default"
+        android:title="@string/pref_location_title"/>
+
+    <ListPreference
+        android:key="@string/pref_unit_key"
+        android:icon="@drawable/ic_ac_unit_black_36dp"
+        android:title="@string/pref_unit_title"
+        android:defaultValue="@string/pref_unit_imperial_value"
+        android:entries="@array/pref_unit_entries"
+        android:entryValues="@array/pref_unit_entryValues"/>
+
+    <CheckBoxPreference
+        android:key="@string/pref_auto_key"
+        android:icon="@drawable/ic_autorenew_black_36dp"
+        android:defaultValue="@bool/pref_auto_default"
+        android:summaryOn="@string/pref_auto_summary_on"
+        android:summaryOff="@string/pref_auto_summary_off"
+        android:title="@string/pref_auto_title"/>
+    <CheckBoxPreference
+        android:key="@string/pref_notification_key"
+        android:icon="@drawable/ic_notification_important_black_36dp"
+        android:title="@string/pref_notification_title"
+        android:defaultValue="@bool/pref_notification_default"
+        android:summaryOn="@string/pref_notification_summary_on"
+        android:summaryOff="@string/pref_notification_summary_off"/>
+
+</PreferenceScreen>
